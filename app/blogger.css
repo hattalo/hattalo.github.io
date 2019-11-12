@@ -1,0 +1,353 @@
+<style id='page-skin-1' type='text/css'><!--
+/*
+* Blogger Template Style
+*
+* Sand Dollar
+* by Jason Sutter
+* Updated by Blogger Team
+*/
+/* Variable definitions
+====================
+<Variable name="textcolor" description="Text Color"
+type="color" default="#000">
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#f6f6f6">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#F5DEB3">
+<Variable name="pagetitlebgcolor" description="Blog Title Background Color"
+type="color" default="#DE7008">
+<Variable name="descriptionColor" description="Blog Description Color"
+type="color" default="#9E5205" />
+<Variable name="descbgcolor" description="Description Background Color"
+type="color" default="#F5E39e">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#9E5205">
+<Variable name="datecolor" description="Date Header Color"
+type="color" default="#777777">
+<Variable name="footercolor" description="Post Footer Color"
+type="color" default="#444444">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#DE7008">
+<Variable name="footerlinkcolor" description="Post Footer Link Color"
+type="color" default="#968a0a">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#DE7008">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#B8A80D">
+<Variable name="sidebarlinkcolor" description="Sidebar Link Color"
+type="color" default="#999999">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#e0ad12">
+<Variable name="bodyfont" description="Text Font"
+type="font"
+default="normal normal 100% 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal bold 150% Verdana,Sans-serif">
+<Variable name="dateHeaderFont" description="Date Header Font"
+type="font"
+default="normal bold 105% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font" default="normal bold 300% Verdana,Sans-Serif">
+<Variable name="titlefont" description="Post Title Font"
+type="font" default="normal bold 160% Verdana,Sans-Serif">
+*/
+body {
+margin:0px;
+padding:0px;
+background:#f6f6f6;
+color:#000000;
+font-size: small;
+}
+#navbar {
+height: 0px;
+visibility: hidden;
+display: none;
+}
+#outer-wrapper {
+font:normal normal 100% Trebuchet, Trebuchet MS, Arial, sans-serif;
+}
+a {
+color:#DE7008;
+}
+a:hover {
+color:#9E5205;
+}
+a img {
+border-width: 0;
+}
+#content-wrapper {
+padding: 0 1em 0 1em;
+}
+@media all  {
+div#main {
+float:right;
+width:66%;
+padding:30px 0 10px 1em;
+border-left:dotted 1px #e0ad12;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+div#sidebar {
+margin:20px 0px 0px 0;
+padding:0px;
+text-align:left;
+float: left;
+width: 31%;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+}
+@media handheld  {
+div#main {
+float:none;
+width:90%;
+}
+div#sidebar {
+padding:30px 7% 10px 3%;
+}
+}
+#header {
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+border-bottom:dotted 1px #e0ad12;
+background:#F5E39e;
+}
+h1 a:link  {
+text-decoration:none;
+color:#f5e39e
+}
+h1 a:visited  {
+text-decoration:none;
+color:#f5e39e
+}
+h1,h2,h3 {
+margin: 0;
+}
+h1 {
+padding:25px 0px 10px 5%;
+color:#f5e39e;
+background:#DE7008;
+font:normal bold 116% Verdana, sans-serif;
+letter-spacing:-2px;
+}
+/* added 4/9/2007 */
+h2 {
+font-size:0.8em;
+}
+h3.post-title {
+color:#9E5205;
+font:normal bold 92% Verdana,Sans-Serif;
+letter-spacing:-1px;
+}
+h3.post-title a,
+h3.post-title a:visited {
+color: #9E5205;
+}
+h2.date-header  {
+margin:10px 0px 0px 0px;
+color:#777777;
+font: normal normal 86% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif;
+}
+h4 {
+color:#aa0033;
+}
+#sidebar h2 {
+color:#B8A80D;
+margin:0px;
+padding:0px;
+font:normal bold 98% Verdana,Sans-serif;
+}
+#sidebar .widget {
+margin:0px 0px 33px 0px;
+padding:0px 0px 0px 0px;
+font-size:95%;
+}
+#sidebar ul {
+list-style-type:none;
+padding-left: 0;
+margin-top: 0;
+}
+#sidebar li {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+list-style-type:none;
+font-size:95%;
+}
+.description {
+padding:0px;
+margin:7px 12% 7px 5%;
+color:#9E5205;
+background:transparent;
+font:bold 100% Verdana,Sans-Serif;
+}
+.post {
+margin:0px 0px 30px 0px;
+}
+.post strong {
+color:#000000;
+font-weight:bold;
+}
+/*  commented out on 4/9/2007
+pre,code {
+color:#999999;
+}
+*/
+/* added on 4/9/2007 */
+.tag_list {
+font-size:0.7em;
+text-align: right;
+}
+pre {
+clear: both;
+overflow: auto;
+background-color: #efefef;
+width:100% !important;
+/* width: 670px; */
+padding-bottom: 0 !important;
+/* padding-bottom: 1.5em; */
+}
+strike {
+color:#999999;
+}
+.post-footer  {
+padding:0px;
+margin:0px;
+color:#444444;
+font-size:80%;
+}
+.post-footer a {
+border:none;
+color:#968a0a;
+text-decoration:none;
+}
+.post-footer a:hover {
+text-decoration:underline;
+}
+#comments {
+padding:0px;
+font-size:110%;
+font-weight:bold;
+}
+.comment-author {
+margin-top: 10px;
+}
+.comment-body {
+font-size:100%;
+font-weight:normal;
+color:black;
+}
+.comment-footer {
+padding-bottom:20px;
+color:#444444;
+font-size:80%;
+font-weight:normal;
+display:inline;
+margin-right:10px
+}
+.deleted-comment  {
+font-style:italic;
+color:gray;
+}
+.comment-link  {
+margin-left:.6em;
+}
+.profile-textblock {
+clear: both;
+margin-left: 0;
+}
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+border: 2px solid #DE7008;
+}
+#sidebar a:link  {
+color:#999999;
+text-decoration:none;
+}
+#sidebar a:active  {
+color:#ff0000;
+text-decoration:none;
+}
+#sidebar a:visited  {
+color:sidebarlinkcolor;
+text-decoration:none;
+}
+#sidebar a:hover {
+color:#B8A80D;
+text-decoration:none;
+}
+.feed-links {
+clear: both;
+line-height: 1.5em;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.clear {
+clear: both;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+/** Tweaks for layout editor preview */
+body#layout #outer-wrapper {
+margin-top: 0;
+}
+body#layout #main,
+body#layout #sidebar {
+margin-top: 10px;
+padding-top: 0;
+}
+/*- Menu Tabs B--------------------------- */
+#tabsB {
+float:left;
+width:100%;
+background:#F4F4F4;
+font-size:80%;  /* was 93 */
+line-height:normal;
+}
+#tabsB ul {
+margin:0;
+padding:10px 10px 0 50px;
+list-style:none;
+}
+#tabsB li {
+display:inline;
+margin:0;
+padding:0;
+}
+#tabsB a {
+float:left;
+background:url("http://javahow.googlepages.com/tableftB.gif") no-repeat left top;
+margin:0;
+padding:0 0 0 4px;
+text-decoration:none;
+}
+#tabsB a span {
+float:left;
+display:block;
+background:url("http://javahow.googlepages.com/tabrightB.gif") no-repeat right top;
+padding:5px 15px 4px 6px;
+color:#666;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabsB a span {float:none;}
+/* End IE5-Mac hack */
+#tabsB a:hover span {
+color:#000;
+}
+#tabsB a:hover {
+background-position:0% -42px;
+}
+#tabsB a:hover span {
+background-position:100% -42px;
+}
+
+--></style>

@@ -1,0 +1,15 @@
+/* Formata Font Family */
+
+@font-face {
+    font-family: 'ProsperaRegular';
+    src: url('prospera-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProsperaItalic';
+    src: url('prospera-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

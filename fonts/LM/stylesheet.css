@@ -1,0 +1,127 @@
+/* LM Font Family */
+
+@font-face {
+    font-family: 'lmmono10Italic';
+    src: url('lmmono10-italic.otf') format('otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lmmono10Regular';
+    src: url('lmmono10-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lmmono12Regular';
+    src: url('lmmono12-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lmmono8Regular';
+    src: url('lmmono8-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lmmono9Regular';
+    src: url('lmmono9-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+-a----        30.10.2009    20:04          63584 lmmono10-italic.otf
+-a----        30.10.2009    20:04          64684 lmmono10-regular.otf
+-a----        30.10.2009    20:04          63012 lmmono12-regular.otf
+-a----        30.10.2009    20:04          66268 lmmono8-regular.otf
+-a----        30.10.2009    20:04          63076 lmmono9-regular.otf
+*/
+@font-face {
+    font-family: 'lmmonocaps10Oblique';
+    src: url('lmmonocaps10-oblique.otf') format('otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lmmonocaps10Regular';
+    src: url('lmmonocaps10-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+-a----        30.10.2009    20:04          71232 lmmonocaps10-oblique.otf
+-a----        30.10.2009    20:04          63228 lmmonocaps10-regular.otf
+
+-a----        30.10.2009    20:04          66332 lmmonolt10-bold.otf
+-a----        30.10.2009    20:04          75300 lmmonolt10-boldoblique.otf
+-a----        30.10.2009    20:04          73144 lmmonolt10-oblique.otf
+-a----        30.10.2009    20:04          63628 lmmonolt10-regular.otf
+-a----        30.10.2009    20:04          75908 lmmonoltcond10-oblique.otf
+-a----        30.10.2009    20:04          64160 lmmonoltcond10-regular.otf
+-a----        30.10.2009    20:04         116764 lmmonoprop10-oblique.otf
+-a----        30.10.2009    20:04         109500 lmmonoprop10-regular.otf
+-a----        30.10.2009    20:04         110276 lmmonoproplt10-bold.otf
+-a----        30.10.2009    20:04         120732 lmmonoproplt10-boldoblique.otf
+-a----        30.10.2009    20:04         118244 lmmonoproplt10-oblique.otf
+-a----        30.10.2009    20:04         110784 lmmonoproplt10-regular.otf
+-a----        30.10.2009    20:04          72212 lmmonoslant10-regular.otf
+-a----        30.10.2009    20:04         111240 lmroman10-bold.otf
+-a----        30.10.2009    20:04         118204 lmroman10-bolditalic.otf
+-a----        30.10.2009    20:04         118828 lmroman10-italic.otf
+-a----        30.10.2009    20:04         111536 lmroman10-regular.otf
+-a----        30.10.2009    20:04         110496 lmroman12-bold.otf
+-a----        30.10.2009    20:04         117732 lmroman12-italic.otf
+-a----        30.10.2009    20:04         110400 lmroman12-regular.otf
+-a----        30.10.2009    20:04         110248 lmroman17-regular.otf
+-a----        30.10.2009    20:04         109564 lmroman5-bold.otf
+-a----        30.10.2009    20:04         111872 lmroman5-regular.otf
+-a----        30.10.2009    20:04         112452 lmroman6-bold.otf
+-a----        30.10.2009    20:04         112212 lmroman6-regular.otf
+-a----        30.10.2009    20:04         110212 lmroman7-bold.otf
+-a----        30.10.2009    20:04         117960 lmroman7-italic.otf
+-a----        30.10.2009    20:04         110792 lmroman7-regular.otf
+-a----        30.10.2009    20:04         112404 lmroman8-bold.otf
+-a----        30.10.2009    20:04         117248 lmroman8-italic.otf
+-a----        30.10.2009    20:04         111948 lmroman8-regular.otf
+-a----        30.10.2009    20:04         113040 lmroman9-bold.otf
+-a----        30.10.2009    20:04         118380 lmroman9-italic.otf
+-a----        30.10.2009    20:04         112680 lmroman9-regular.otf
+-a----        30.10.2009    20:04         116564 lmromancaps10-oblique.otf
+-a----        30.10.2009    20:04         108740 lmromancaps10-regular.otf
+-a----        30.10.2009    20:04         119632 lmromandemi10-oblique.otf
+-a----        30.10.2009    20:04         111892 lmromandemi10-regular.otf
+-a----        30.10.2009    20:04         122840 lmromandunh10-oblique.otf
+-a----        30.10.2009    20:04         113276 lmromandunh10-regular.otf
+-a----        30.10.2009    20:04         117984 lmromanslant10-bold.otf
+-a----        30.10.2009    20:04         118508 lmromanslant10-regular.otf
+-a----        30.10.2009    20:04         117116 lmromanslant12-regular.otf
+-a----        30.10.2009    20:04         118092 lmromanslant17-regular.otf
+-a----        30.10.2009    20:04         118720 lmromanslant8-regular.otf
+-a----        30.10.2009    20:04         119932 lmromanslant9-regular.otf
+-a----        30.10.2009    20:04         124048 lmromanunsl10-regular.otf
+-a----        30.10.2009    20:04         107448 lmsans10-bold.otf
+-a----        30.10.2009    20:04         114984 lmsans10-boldoblique.otf
+-a----        30.10.2009    20:04         101412 lmsans10-oblique.otf
+-a----        30.10.2009    20:04          95128 lmsans10-regular.otf
+-a----        30.10.2009    20:04         102056 lmsans12-oblique.otf
+-a----        30.10.2009    20:04          95160 lmsans12-regular.otf
+-a----        30.10.2009    20:04         100500 lmsans17-oblique.otf
+-a----        30.10.2009    20:04          94828 lmsans17-regular.otf
+-a----        30.10.2009    20:04         100084 lmsans8-oblique.otf
+-a----        30.10.2009    20:04          94256 lmsans8-regular.otf
+-a----        30.10.2009    20:04         101068 lmsans9-oblique.otf
+-a----        30.10.2009    20:04          94552 lmsans9-regular.otf
+-a----        30.10.2009    20:04         114848 lmsansdemicond10-oblique.otf
+-a----        30.10.2009    20:04         106836 lmsansdemicond10-regular.otf
+-a----        30.10.2009    20:04         106232 lmsansquot8-bold.otf
+-a----        30.10.2009    20:04         112456 lmsansquot8-boldoblique.otf
+-a----        30.10.2009    20:04         112648 lmsansquot8-oblique.otf
+-a----        30.10.2009    20:04         105172 lmsansquot8-regular.otf
+*/

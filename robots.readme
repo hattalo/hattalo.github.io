@@ -1,0 +1,12 @@
+From https://yoast.com/robots-meta-tags/
+Also see https://yoast.com/ultimate-guide-robots-txt/
+
+noindex:      Disallow search engines from adding this page to their index, and therefore disallow them from showing it in their results.
+nofollow:     Tells the search engines robots to ‘endorse’ (pass equity through) any links on the page.
+none:         A shortcut for noindex, nofollow.
+all:          A shortcut for index, follow. This is assumed by default on all pages, and does nothing if specified.
+noimageindex: Disallow search engines from indexing images on the page.
+Note: If images are linked to directly from elsewhere, search engines can still index them, so using an X-Robots-Tag HTTP header is generally a better idea.
+noarchive:    Prevents the search engines from showing a cached copy of this page in their search results listings.
+nocache:      Same as noarchive, but only used by MSN/Live.
+nosnippet:    Prevents the search engines from showing a text or video snippet (i.e., a meta description) of this page in the search results, and prevents them from showing a cached copy of this page in their search results listings.
