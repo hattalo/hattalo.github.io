@@ -64,6 +64,11 @@
         .botali {vertical-align: text-bottom}
         .top16 {margin-top: 16px; color: #fff;}
         .top20 {margin-top: 20px}
+        a.ondarkbg:link {color: aliceblue;}
+        a.ondarkbg:visited {color: lightskyblue;}
+        a.ondarkbg:hover {color: lightsteelblue;}
+        a.ondarkbg:active {color: lightcyan;}
+        #siteVersion {position:absolute;bottom:18px;right:12px;color:burlywood;}
     </style>
         <!--
         .fa.fa-screwdriver:before {/* todo with V.5*/
@@ -225,11 +230,29 @@ a
                 <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/fontawesome-free-5.3.1-web/demo.html">fontawesome-free-5.3.1-web</a></li>
             </ul>
         </div>
+<div style="width:500px; display:block">
+
+</div>
     </div>
 
     <div class="footer l-box is-center titilliumTextRegular">
-        2019. Made in München.
+        <div style="display:contents">
+            2019. Made with
+            <a title="Adobe Brackets" href="https://github.com/adobe/brackets/" class="ondarkbg">Brackets 1.14</a>
+            and GitHub Desktop 2.2.3
+            in München.
+        </div>
+        <div style="display:contents">
+            [<a title="Source code for this GitHub Pages project" href="https://github.com/hattalo/hattalo.github.io"class="ondarkbg">Source code</a>]
+        </div>
+        <div style="display:contents">
+            [<a title="GitHub Pages" href="https://pages.github.com/" class="ondarkbg">More on GitHub Pages</a>]
+        </div>
+        <div id="siteVersion">
+            v.0.1-beta
+        </div>
     </div>
+
 
 </div>
 </app-root>
