@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../webfonts/ExcellenceInMotion/stylesheet.css">
     <link rel="stylesheet" href="../webfonts/Formata/stylesheet.css">
     <link rel="stylesheet" href="../webfonts/TitilliumText-fontfacekit/stylesheet.css">
+    <link rel="stylesheet" href="../webfonts/Meta/stylesheet.css">
 
     <!--#include virtual="./dc.html" -->
     
@@ -34,7 +35,9 @@
     <meta name="DC.description" content="Curriculum Vitae">
 
     <style type="text/css">
-        .excinmo-30-reg {font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
+        .excinmo-30-reg {
+            font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;
+        }
         .top16 {margin-top: 16px; color: #fff;}
         #siteVersion {
             position:absolute;
@@ -53,7 +56,6 @@
             font: 16px/21px  'FormataRegular', sans-serif;
             letter-spacing: 2px;
             padding: 2px;
-            line-height: 1.5em;
             background: #e1e8f0;
         }
         table.cord-cv-addl-table thead td {
@@ -61,7 +63,6 @@
             font: 16px/21px  'FormataRegular', sans-serif;
             letter-spacing: 2px;
             padding: 2px;
-            line-height: 1.5em;
             background: #e1e8f0;
         }
         table.cord-cv-table tbody td {
@@ -69,7 +70,6 @@
             font: 14px/19px  'FormataRegular', sans-serif;
             letter-spacing: 0;
             padding: 2px;
-            /*line-height: 1.5em;*/
             vertical-align: top;
         }
         table.cord-cv-addl-table tbody td {
@@ -77,7 +77,6 @@
             font: 14px/19px  'FormataRegular', sans-serif;
             letter-spacing: 0;
             padding: 2px;
-            /*line-height: 1.5em;*/
             vertical-align: top;
         }
         table.cord-cv-addl-table tbody td.yearColumn {
@@ -85,15 +84,12 @@
             font: 14px/19px  'FormataRegular', sans-serif;
             letter-spacing: 0;
             padding: 2px;
-          /*line-height: 1.5em;*/
             width: 50px;
         }
-        
         table.cord-cv-table td:first-of-type {
             /*width: 170px;*/
             white-space: nowrap;
         }
-        
         table.cord-cv-table td.title-cell {
             font: 14px/19px  'FormataBold', sans-serif;
             vertical-align: top;
@@ -113,14 +109,23 @@
         div.betweenTables {
             height: 3px;
         }
-        div.betweenTablesLarge {
-            height: 38px;
+        div.betweenTablesX {
+            height: 22px;
+        }
+        div.betweenTablesTall {
+            height: 70px;
         }
         div.content.content-table {
             /*height: 180%;*/
             margin: 0 auto;
             width: 865px;
         }
+        h4.role-sought {
+            font: 20px/25px 'MetaSerifComp', serif; font-style;bold;
+        }
+        /*table#extlinks #github,#linkedin,#gulp {
+            text-align: center;
+        }*/
     </style>
 </head>
 <body>
@@ -133,10 +138,29 @@
     </div>
 </div>
 <app-root>
-        <div class="betweenTablesLarge">&nbsp;</div>
+    <div class="betweenTablesTall">&#160;</div>
     <div class="content content-table">
-
-        <table class="pure-table pure-table-bordered cord-cv-table">
+        <table id="details" class="pure-table pure-table-bordered cord-cv-table">
+            <tbody>
+                <!-- 11th Dimension -->
+                <tr class="startEntry">
+                    <td class="title-cell">Mobile</td>
+                    <td>&#43;&#52;9 &#47; 1&#55;&#48; &#47; &#55;&#56;3 &#48;&#48;&#48;2</td>
+                    <td class="title-cell">E-mail</td>
+                    <td>bruno&#46;samueli&#64;pm&#46;me</td>
+                    <td>&#160;</td>
+                    <td class="title-cell">Work Eligibility</td>
+                    <td><em>Freiberufler</em></td>
+                    <td>&#160;</td>
+                    <td class="title-cell">Availability</td>
+                    <td>immediate</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h4 class="role-sought">Role Sought: Fullstack Java Developer</h4>
+        
+        <table id="experience" class="pure-table pure-table-bordered cord-cv-table">
             <thead>
                 <tr>
                     <td colspan="5">Project Experience</td>
@@ -166,7 +190,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Application Server</td>
-                    <td>JBoss EAP 7.2, JBoss Wildfly</td>
+                    <td>JBoss EAP 7.2, JBoss Wildfly 17</td>
                     <td></td>
                     <td class="title-cell">Databases</td>
                     <td>Cassandra 3.11, Oracle 12c; MongoDB 4</td>
@@ -210,7 +234,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">&nbsp;</td>
+                    <td colspan="5">&#160;</td>
                 </tr>
                 <!-- Arbeitsagentur NÜ -->
                 <tr class="startEntry">
@@ -242,7 +266,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Dev Tools</td>
-                    <td>Eclipse Oxygen, SQLDeveloper, Docker</td>
+                    <td>Eclipse Oxygen, SQLDeveloper, Docker [OS] Windows 10</td>
                     <td></td>
                     <td class="title-cell">Build process</td>
                     <td>Maven, Git, BitBucket; JIRA, Confluence, Jenkins; SonarQube, JaCoCo</td>
@@ -260,7 +284,6 @@
                         <ul class="pure-menu-list cord-square-items">
                             <li class="pure-menu-item">Java 8; POI, iText</li>
                             <li class="pure-menu-item">[Frontend] Angular</li>
-                            <li class="pure-menu-item">[OS] Windows 10</li>
                         </ul>
                     </td>
                 </tr>
@@ -276,7 +299,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="6">&nbsp;</td>
+                    <td colspan="6">&#160;</td>
                 </tr>
                <!-- Allianz Technology -->
                 <tr class="startEntry">
@@ -295,7 +318,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Project</td>
-                    <td colspan="2">Implementing Enterprise-Grade SOAP Message Processing using JBoss SOA5 Server</td>
+                    <td colspan="2">Implementing Enterprise-Grade SOAP Message Processing using JBoss FSW / Fuse Server</td>
                     <td class="title-cell">Methodology</td>
                     <td>Agile / SCRUM, Clean Code, TDD, DDD</td>
                 </tr>
@@ -308,7 +331,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Dev Tools</td>
-                    <td>JDeveloper S8, SoapUI, SquirreL, vim</td>
+                    <td>JDeveloper S8, SoapUI, SquirreL, Notepad++, vim [OS] RedHat Linux, Windows 7</td>
                     <td></td>
                     <td class="title-cell">Build process</td>
                     <td>Maven, SVN, Nexus, Jenkins</td>
@@ -318,7 +341,7 @@
                     <td>SCA, XML/XSD, SOAP, REST, WSDL, JAX-WS, JPA, JAXB</td>
                     <td></td>
                     <td class="title-cell">Testing</td>
-                    <td>JUnit 5, Hamcrest, Mockito</td>
+                    <td>JUnit 5, Hamcrest, Mockito, Arquillian</td>
                 </tr>
                 <tr>
                     <td class="title-cell">Technologies used</td>
@@ -327,7 +350,7 @@
                             <li class="pure-menu-item">Java 7 / 8; PL/SQL</li>
                             <li class="pure-menu-item">[Frontend] Angular</li>
                             <li class="pure-menu-item">[JBoss Fuse] Apache Camel, Switchyard, Drools; Apache CXF; OpenShift, Kafka, ElasticSearch, Kibana</li>
-                            <li class="pure-menu-item">[OS] RedHat Linux, Windows 7</li>
+                            <li class="pure-menu-item"></li>
                             <li class="pure-menu-item">[Jenkins] Groovy, Ansible, RPMs</li>
                         </ul>
                     </td>
@@ -348,19 +371,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">&nbsp;</td>
+                    <td colspan="5">&#160;</td>
                 </tr>
                 <!-- AMOS Austria -->
                 <tr class="startEntry">
                     <td>02/2015 – 06/2016</td>
-                    <td class="title-cell">JBoss SOA5 Developer</td>
+                    <td class="title-cell">JBoss SOA-P5 Developer</td>
                     <td></td>
                     <td class="title-cell">Industry</td>
                     <td>Insurance</td>
                 </tr>
                 <tr>
                     <td class="title-cell">Project</td>
-                    <td colspan="2">Implementing Enterprise-Grade SOAP Message Processing using JBoss SOA5 Server</td>
+                    <td colspan="2">Implementing Enterprise-Grade SOAP Message Processing using JBoss SOA-P5 Server</td>
                     <td class="title-cell">Methodology</td>
                     <td>Clean Code, Pair Prog.</td>
 
@@ -374,14 +397,14 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Application Server</td>
-                    <td>JBoss SOA5</td>
+                    <td>JBoss SOA-P5</td>
                     <td></td>
                     <td class="title-cell">Database</td>
                     <td>DB2</td>
                 </tr>
                 <tr>
                     <td class="title-cell">Dev Tools</td>
-                    <td>Eclipse Luna, SoapUI, SQuirreL, Softerra LDAP Browser</td>
+                    <td>Eclipse Luna, SoapUI, SQuirreL, Softerra LDAP Browser [OS] RedHat Linux, Windows 7</td>
                     <td></td>
                     <td class="title-cell">Build process</td>
                     <td>Maven, SVN, Nexus, Jenkins</td>
@@ -416,7 +439,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">&nbsp;</td>
+                    <td colspan="5">&#160;</td>
                 </tr>
                 <!-- UniCredit -->
                 <tr class="startEntry">
@@ -446,7 +469,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Dev Tools</td>
-                    <td>Eclipse Luna, SoapUI, SQuirreL, Softerra LDAP Browser, VisualVM, JProfiler, JMeter</td>
+                    <td>Eclipse Luna, SoapUI, SQuirreL, Softerra LDAP Browser, VisualVM, JProfiler, JMeter [OS] Windows 7</td>
                     <td></td>
                     <td class="title-cell">Build process</td>
                     <td>Maven, SVN, Nexus</td>
@@ -472,25 +495,24 @@
                     <td colspan="4">
                         <ul class="pure-menu-list cord-square-items">
                             <li class="pure-menu-item">Developed EJBs, MDBs, CDI beans, producers, interceptors using annotations</li>
-                            <li class="pure-menu-item">Programmed Hibernate4-based multithreaded batch processes, incl. automated HTTP request/response handling</li>
+                            <li class="pure-menu-item">Programmed Hibernate4-based multi-threaded batch processes, incl. automated HTTP request/response handling</li>
                             <li class="pure-menu-item">Coded SQL queries and statements in Hibernate annotations</li>
                             <li class="pure-menu-item">Coded transactional JPA mappings and queries in entities using annotations</li>
                             <li class="pure-menu-item">Coded Web interface JSF pages using Primefaces</li>
-                            <li class="pure-menu-item">Proposed an overhaul of the Aramis JMS infrastructure, using Java 6 features, JMS 1.1 and Spring JMS libraries, e.g. Spring's <span class="preform">JmsTemplate</span> and <span class="preform">DefaultMessageListenerContainer</span>
                             <li class="pure-menu-item">Developed a new implementation of file gzipping using Java NIO, ported record formatting logic to SQL for the T3RREPO report</li>
-                            <li class="pure-menu-item">Configured JBoss EAP, esp. Hornet queues and security tokens for test and development</li>
+                            <li class="pure-menu-item">Configured JBoss EAP, esp. HornetQ queues and security tokens for test and development</li>
                             <li class="pure-menu-item">Written documentation in Wiki</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">&nbsp;</td>
+                    <td colspan="5">&#160;</td>
                 </tr>
             </tbody>
         </table>
         
-        <div class="betweenTables">&nbsp;</div>
-        <table class="pure-table pure-table-bordered cord-cv-addl-table">
+        <div class="betweenTables">&#160;</div>
+        <table id="coursework"  class="pure-table pure-table-bordered cord-cv-addl-table">
              <thead>
                 <tr>
                     <td colspan="4">Independent Coursework</td>
@@ -506,8 +528,8 @@
             </tbody>
         </table>
         
-        <div class="betweenTables">&nbsp;</div>
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
+        <div class="betweenTables">&#160;</div>
+        <table id="education" class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
              <thead>
                 <tr>
                     <td colspan="4">Education</td>
@@ -517,54 +539,58 @@
                 <tr>
                     <td class="yearColumn">1998</td>
                     <td>B.A.</td>
-                    <td><a href="https://www.24orebs.com/">Columbia University in the City of New York</a></td>
+                    <td class="title-cell"><a href="https://www.columbia.edu/">Columbia University in the City of New York</a></td>
                     <td>New York, NY</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>&#160;</td>
                     <td colspan="3">Philosophy major: logic, mathematics</td>
                 </tr>
             </tbody>
         </table>
-        
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
+        <table id="languages" class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
              <thead>
                 <tr>
-                    <td colspan="3">Language Proficiency</td>
+                    <td colspan="2">Language Proficiency</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="yearColumn">&nbsp;</td>
-                    <td>English, French, Italian</td>
+                    <td class="title-cell">English, French, Italian</td>
                     <td>near-native</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>German</td>
+                    <td class="title-cell">German</td>
                     <td>intermediate (C1)</td>
                 </tr>
             </tbody>
         </table>
-        
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:122px;float:none;">
+        <table id="interests" class="pure-table pure-table-bordered cord-cv-addl-table" style="width:122px;float:none;">
             <thead>
                 <tr>
-                    <td colspan="2">Interests</td>
+                    <td>Interests</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="yearColumn">&nbsp;</td>
                     <td>Biking</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
                     <td>Latin dance</td>
                 </tr>
             </tbody>
         </table>
-        <div class="betweenTables">&nbsp;</div>
+        <div class="betweenTablesX">&#160;</div>
+        <table id="extlinks" class="pure-table pure-table-bordered cord-cv-table">
+            <tbody>
+                <tr class="startEntry">
+                    <td class="title-cell">Web</td>
+                    <td class="is-center"><a id="github" href="https://www.github.com/hattalo/">GitHub</a></td>
+                    <td class="is-center"><a id="linkedin" href="https://www.linkedin.com/in/brunosamueli/">LinkedIn</a></td>
+                    <td class="is-center"><a id="gulp" href="https://www.gulp.de/gulp2/home/profil/brunosamueli?0">GULP</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </app-root>
 <div class="footer l-box is-center">
