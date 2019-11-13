@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- Page is based on Landing Page layout from https://purecss.io/layouts/ -->
 <head>
     <title>Bruno Samueli @ GitHub &ndash; Shorter Resume</title>  
     <link rel="stylesheet"   href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">    
@@ -16,27 +16,23 @@
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="../../css/layouts/marketing.css">
     <!--<![endif]-->
+
     
     <link rel="stylesheet" href="../webfonts/ExcellenceInMotion/stylesheet.css">
     <link rel="stylesheet" href="../webfonts/Formata/stylesheet.css">
     <link rel="stylesheet" href="../webfonts/TitilliumText-fontfacekit/stylesheet.css">
-    
-    <link rel="schema.DC"    href="http://purl.org/dc/elements/1.1/">
-    <link rel="DC.relation"  href="http://dublincore.org/documents/2000/08/15/dcq-html/">
+        
+    {% include dc.html %}
     
     <meta charset="utf-8">
-    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
-    <!-- Page is based on Landing Page layout from https://purecss.io/layouts/ -->
-    <meta name="description" content="Bruno Samueli's Curriculum Vitae.">
-    <meta name="robots"      content="none,noindex,nofollow,noarchive,nocache,noyaca">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="Bruno Samueli's Curriculum Vitae.">
+    <meta name="robots"         content="none,noindex,nofollow,noarchive,nocache,noyaca">
     
-    <meta name="DC.title"       content="Bruno Samueli @ GitHub Page :: HTML resume (shorter)">
-    <meta name="DC.creator"     content="Bruno Samueli">
+    <meta name="DC.title"       content="Bruno Samueli @ GitHub Page :: HTML resume (2013-...)">
     <meta name="DC.date"        content="2019-11-12">
-    <meta name="DC.identifier"  content="http://dublincore.org/documents/dcq-html/">
     <meta name="DC.description" content="Curriculum Vitae">
-    <meta name="DC.format"      content="text/html">
-    <meta name="DC.type"        content="Text">
+
     <style type="text/css">
         .excinmo-30-reg {font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
         .top16 {margin-top: 16px; color: #fff;}
@@ -49,13 +45,13 @@
         }
         table.cord-cv-table, table.cord-cv-addl-table {
             display:table;
-            width: 80%;
+            width: 836px;
             margin:0 auto;
         }
         table.cord-cv-table thead td {
             display:table-cell;
             font: 16px/21px  'FormataRegular', sans-serif;
-            letter-spacing: 2;
+            letter-spacing: 2px;
             padding: 2px;
             line-height: 1.5em;
             background: #e1e8f0;
@@ -63,7 +59,7 @@
         table.cord-cv-addl-table thead td {
             display:table-cell;
             font: 16px/21px  'FormataRegular', sans-serif;
-            letter-spacing: 2;
+            letter-spacing: 2px;
             padding: 2px;
             line-height: 1.5em;
             background: #e1e8f0;
@@ -89,12 +85,12 @@
             font: 14px/19px  'FormataRegular', sans-serif;
             letter-spacing: 0;
             padding: 2px;
-            line-height: 1.5em;
-            width: 80px;
+          /*line-height: 1.5em;*/
+            width: 50px;
         }
         
         table.cord-cv-table td:first-of-type {
-            width: 170px;
+            /*width: 170px;*/
             white-space: nowrap;
         }
         
@@ -115,10 +111,15 @@
             margin-left: 4px;
         }
         div.betweenTables {
-            height: 4px;
+            height: 3px;
         }
         div.betweenTablesLarge {
-            height: 76px;
+            height: 38px;
+        }
+        div.content.content-table {
+            /*height: 180%;*/
+            margin: 0 auto;
+            width: 865px;
         }
     </style>
 </head>
@@ -132,8 +133,9 @@
     </div>
 </div>
 <app-root>
-    <div class="content" style="height: 120%;width: 80%;margin: 0 auto;">
         <div class="betweenTablesLarge">&nbsp;</div>
+    <div class="content content-table">
+
         <table class="pure-table pure-table-bordered cord-cv-table">
             <thead>
                 <tr>
@@ -227,7 +229,7 @@
                 </tr>
                 <tr>
                     <td class="title-cell">Project</td>
-                    <td colspan="2">COLIBRI Umbau: Common Software Solutions for Acceptance Testing</td>
+                    <td colspan="2">COLIBRI Umbau: Delivering Common Software Solutions for Acceptance Testing</td>
                     <td class="title-cell">Methodology</td>
                     <td>Agile / Kanban / SCRUM, Clean Code, Pair Prog.</td>
                 </tr>
@@ -504,8 +506,8 @@
             </tbody>
         </table>
         
-        <div class="betweenTables">&nbsp;</div>
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:35%;float:left;margin-right: 5px">
+        <div class="betweenTables">a&nbsp;</div>
+        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
              <thead>
                 <tr>
                     <td colspan="4">Education</td>
@@ -525,27 +527,27 @@
             </tbody>
         </table>
         
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:38%;float:left;margin-right: 5px">
+        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:350px;float:left;margin-right: 5px">
              <thead>
                 <tr>
-                    <td colspan="3">Languages</td>
+                    <td colspan="3">Language Proficiency</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="yearColumn">&nbsp;</td>
                     <td>English, French, Italian</td>
-                    <td>near-native proficiency</td>
+                    <td>near-native</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>German</td>
-                    <td>intermediate (C1) proficiency</td>
+                    <td>intermediate (C1)</td>
                 </tr>
             </tbody>
         </table>
         
-        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:15%">
+        <table class="pure-table pure-table-bordered cord-cv-addl-table" style="width:122px;float:none;">
             <thead>
                 <tr>
                     <td colspan="2">Interests</td>
@@ -562,6 +564,7 @@
                 </tr>
             </tbody>
         </table>
+        <div class="betweenTables">&nbsp;</div>
     </div>
 </app-root>
 <div class="footer l-box is-center">
