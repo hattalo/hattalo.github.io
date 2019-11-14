@@ -1,17 +1,7 @@
----
-author: Bruno Samueli
-title: {{author}} @ GitHub Page &ndash; HTML resume (from 2013 on)
-description: Curriculum Vitae
-created: 2019-11-12
-author
-    availability: immediate
-role-sought
-    text: "Role Sought: Fullstack Java Developer"
----
 <!DOCTYPE html>
 <html lang="en"><!-- Page is based on Landing Page layout from https://purecss.io/layouts/ -->
 <head>
-    <title>{{page.title}}</title>  
+    <title>Bruno Samueli @ GitHub Page &ndash; Shorter HTML resume</title>  
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">    
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
@@ -29,17 +19,15 @@ role-sought
 
     <link rel="stylesheet" href="bruno-samueli_cv-en.css">
 
-    <!--#include virtual="./dc.html" -->
-    <!-- liquid -->
     {% include_relative ./dc.html %}
     <meta charset="utf-8">
-    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
-    <meta name="description"    content="{{page.title}}">
     <meta name="robots"         content="none,noindex,nofollow,noarchive,nocache,noyaca">
-    
-    <meta name="DC.title"       content="{{page.title}}">
-    <meta name="DC.date"        content="{{page.date}}">
-    <meta name="DC.description" content="{{page.description}}">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="Curriculum Vitae">
+
+    <meta name="DC.title"       content="Shorter HTML resume">
+    <meta name="DC.date"        content="2019-11-13">
+    <meta name="DC.description" content="Curriculum Vitae">
 </head>
 <body>
 <div class="header">
@@ -50,7 +38,7 @@ role-sought
         </ul>
     </div>
 </div>
-<app-root>
+<app-root><!-- {{page.author}} -->
     <div class="betweenTablesTall">&#160;</div>
     <div class="content content-table">
         <table id="details" class="pure-table pure-table-bordered cord-cv-table">
@@ -66,12 +54,12 @@ role-sought
                     <td><em>Freiberufler</em></td>
                     <td>&#160;</td>
                     <td class="title-cell">Availability</td>
-                    <td>{{page.author.availability}}</td>
+                    <td>immediate</td>
                 </tr>
             </tbody>
         </table>
         
-        <h4 class="role-sought">{{page.role-sought.text}}</h4>
+        <h4 class="role-sought">Role Sought: Fullstack Java Developer</h4>
         
         <table id="experience" class="pure-table pure-table-bordered cord-cv-table">
             <thead>
