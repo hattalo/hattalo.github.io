@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("../webfonts/ExcellenceInMotion/stylesheet.css");
+@import url("../webfonts/Formata/stylesheet.css");
+@import url("../webfonts/Meta/stylesheet.css");
+@import url("../webfonts/TitilliumText-fontfacekit/stylesheet.css");
+/* START */
+#siteVersion {
+    position:absolute;
+    bottom:4px;
+    right:12px;
+    color:burlywood;
+    font: 18px/27px 'TitilliumText22LRegular', sans-serif;
+}
+h4#role-sought {
+    font: 20px/25px 'MetaSerifComp', serif; font-style;bold;
+}
+/*table#extlinks #github,#linkedin,#gulp {
+    text-align: center;
+}*/
+.excinmo-30-reg {
+    font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;
+}
+.top16 {
+    margin-top: 16px; color: #fff;
+}
+div.betweenTables {
+    height: 3px;
+}
+div.betweenTablesX {
+    height: 22px;
+}
+div.betweenTablesTall {
+    height: 70px;
+}
+div.content.content-table {
+    /*height: 180%;*/
+    margin: 0 auto;
+    width: 865px;
+}
+span.preform {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+table.cord-cv-table, table.cord-cv-addl-table {
+    display:table;
+    width: 836px;
+    margin:0 auto;
+}
+table.cord-cv-table thead td {
+    display:table-cell;
+    font: 16px/21px  'FormataRegular', sans-serif;
+    letter-spacing: 2px;
+    padding: 2px;
+    background: #e1e8f0;
+}
+table.cord-cv-addl-table thead td {
+    display:table-cell;
+    font: 16px/21px  'FormataRegular', sans-serif;
+    letter-spacing: 2px;
+    padding: 2px;
+    background: #e1e8f0;
+}
+table.cord-cv-table tbody td {
+    display:table-cell;
+    font: 14px/19px  'FormataRegular', sans-serif;
+    letter-spacing: 0;
+    padding: 2px;
+    vertical-align: top;
+}
+table.cord-cv-addl-table tbody td {
+    display:table-cell;
+    font: 14px/19px  'FormataRegular', sans-serif;
+    letter-spacing: 0;
+    padding: 2px;
+    vertical-align: top;
+}
+table.cord-cv-addl-table tbody td.yearColumn {
+    display:table-cell;
+    font: 14px/19px  'FormataRegular', sans-serif;
+    letter-spacing: 0;
+    padding: 2px;
+    width: 50px;
+}
+table.cord-cv-table td:first-of-type {
+    /*width: 170px;*/
+    white-space: nowrap;
+}
+table.cord-cv-table td.title-cell {
+    font: 14px/19px  'FormataBold', sans-serif;
+    vertical-align: top;
+    white-space: nowrap;
+}
+table.cord-cv-table tr.startEntry {
+    background: #f7f7f7;
+}
+ul.cord-square-items li {
+    list-style: square inside;
+    margin-left: 4px;
+}
+/* END */

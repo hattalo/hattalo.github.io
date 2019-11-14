@@ -2,7 +2,7 @@
 <html lang="en"><!-- Page is based on Landing Page layout from https://purecss.io/layouts/ -->
 <head>
     <title>Bruno Samueli @ GitHub &ndash; Shorter Resume</title>  
-    <link rel="stylesheet"   href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">    
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
     <![endif]-->
@@ -17,116 +17,25 @@
         <link rel="stylesheet" href="../../css/layouts/marketing.css">
     <!--<![endif]-->
 
-    
-    <link rel="stylesheet" href="../webfonts/ExcellenceInMotion/stylesheet.css">
-    <link rel="stylesheet" href="../webfonts/Formata/stylesheet.css">
-    <link rel="stylesheet" href="../webfonts/TitilliumText-fontfacekit/stylesheet.css">
-    <link rel="stylesheet" href="../webfonts/Meta/stylesheet.css">
+    <link rel="stylesheet" href="bruno-samueli_cv-en.css">
+---
+author: Bruno Samueli
+title: {{author}} @ GitHub Page :: HTML resume (from 2013 on)
+description: Curriculum Vitae
+created: 2019-11-12
+---
 
     <!--#include virtual="./dc.html" -->
-    
+    <!-- liquid -->
+    {% include_relative ./dc.html %}
     <meta charset="utf-8">
     <meta name="viewport"       content="width=device-width, initial-scale=1.0">
-    <meta name="description"    content="Bruno Samueli's Curriculum Vitae.">
+    <meta name="description"    content="{{page.title}}">
     <meta name="robots"         content="none,noindex,nofollow,noarchive,nocache,noyaca">
     
-    <meta name="DC.title"       content="Bruno Samueli @ GitHub Page :: HTML resume (2013-...)">
-    <meta name="DC.date"        content="2019-11-12">
-    <meta name="DC.description" content="Curriculum Vitae">
-
-    <style type="text/css">
-        .excinmo-30-reg {
-            font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;
-        }
-        .top16 {margin-top: 16px; color: #fff;}
-        #siteVersion {
-            position:absolute;
-            bottom:4px;
-            right:12px;
-            color:burlywood;
-            font: 18px/27px 'TitilliumText22LRegular', sans-serif;
-        }
-        table.cord-cv-table, table.cord-cv-addl-table {
-            display:table;
-            width: 836px;
-            margin:0 auto;
-        }
-        table.cord-cv-table thead td {
-            display:table-cell;
-            font: 16px/21px  'FormataRegular', sans-serif;
-            letter-spacing: 2px;
-            padding: 2px;
-            background: #e1e8f0;
-        }
-        table.cord-cv-addl-table thead td {
-            display:table-cell;
-            font: 16px/21px  'FormataRegular', sans-serif;
-            letter-spacing: 2px;
-            padding: 2px;
-            background: #e1e8f0;
-        }
-        table.cord-cv-table tbody td {
-            display:table-cell;
-            font: 14px/19px  'FormataRegular', sans-serif;
-            letter-spacing: 0;
-            padding: 2px;
-            vertical-align: top;
-        }
-        table.cord-cv-addl-table tbody td {
-            display:table-cell;
-            font: 14px/19px  'FormataRegular', sans-serif;
-            letter-spacing: 0;
-            padding: 2px;
-            vertical-align: top;
-        }
-        table.cord-cv-addl-table tbody td.yearColumn {
-            display:table-cell;
-            font: 14px/19px  'FormataRegular', sans-serif;
-            letter-spacing: 0;
-            padding: 2px;
-            width: 50px;
-        }
-        table.cord-cv-table td:first-of-type {
-            /*width: 170px;*/
-            white-space: nowrap;
-        }
-        table.cord-cv-table td.title-cell {
-            font: 14px/19px  'FormataBold', sans-serif;
-            vertical-align: top;
-            white-space: nowrap;
-        }
-        table.cord-cv-table tr.startEntry {
-            background: #f7f7f7;
-        }
-        span.preform {
-            font-family: monospace;
-            white-space: pre-wrap;
-        }
-        ul.cord-square-items li {
-            list-style: square inside;
-            margin-left: 4px;
-        }
-        div.betweenTables {
-            height: 3px;
-        }
-        div.betweenTablesX {
-            height: 22px;
-        }
-        div.betweenTablesTall {
-            height: 70px;
-        }
-        div.content.content-table {
-            /*height: 180%;*/
-            margin: 0 auto;
-            width: 865px;
-        }
-        h4.role-sought {
-            font: 20px/25px 'MetaSerifComp', serif; font-style;bold;
-        }
-        /*table#extlinks #github,#linkedin,#gulp {
-            text-align: center;
-        }*/
-    </style>
+    <meta name="DC.title"       content="{{page.title}}">
+    <meta name="DC.date"        content="{{page.created}}">
+    <meta name="DC.description" content="{{page.description}}">
 </head>
 <body>
 <div class="header">
