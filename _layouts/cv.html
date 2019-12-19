@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{site.title_start}} {{page.title}}</title>
+
+    {% include pure.html %}
+
+    <link rel="stylesheet" href="/static/cv/cv.css">
+
+    {% include dc.html format='text/html' %}
+
+    <meta charset="utf-8">
+    <meta name="robots"         content="{{ site.robots }}">
+    <meta name="viewport"       content="{{ site.viewport }}">
+    <meta name="description"    content="{{ page.description }}">
+
+    <meta name="DC.title"       content="{{ page.title }}">
+    <meta name="DC.date"        content="{{ page.date }}">
+    <meta name="DC.description" content="{{ page.description }}">
+</head>
+<body>
+<header>
+    {{ site.header }}
+</header>
+<section id="var1">
+{% assign candidate = site.data.devteam[page.candidate] %}
+<div>page.author {{ page.author }} site.author {{ site.author }} author {{ author }} page.date {{ page.date }} page.time {{ page.time }} page.name {{ page.name }}</div>
+</section>
+<div id="app-root">
+    {{ content }}
+</div>
+<div class="footer l-box is-center">
+    {{ page.footer }}
+</div>
+</body>
+</html>
