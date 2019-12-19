@@ -1,0 +1,118 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+encoding: "bom|utf-8"
+mode: 'r:bom|UTF-8'
+#'rb:UTF-16BE'
+#'r:bom|utf-8'
+#source:  static/ersa
+
+# Meta
+title: hattalo github page
+email: hattalo@yahoo.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hattalo.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  hattalo
+env: production
+
+# Build
+
+markdown: kramdown
+title_start: 'Bruno Samuelian &#x40; GitHub &#x214B;'
+robots: none,noindex,nofollow,noarchive,nocache,noyaca
+viewport: width=device-width, initial-scale=1.0
+
+defaults:
+  -
+    scope:
+      path: "" # all files in the project
+      type: "posts"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "/static/cv/cv-en.markdown"
+      type: "pages" # previously `page` in Jekyll 2.2.
+      permalink: "/cv/"
+    values:
+      layout: "cv" # overrides previous default layout
+      author: "Bruno Samueli1"
+      topic: "curriculum vita1e"
+
+exclude: ['assets/ersa', 'assets/lang', 'icons', 'templates', 'docker-compose.yml', 'package.json', 'yarn.lock', 'Gemfile.lock']
+
+# CSS
+css:
+  pure:   https://unpkg.com/purecss@1.0.1/build/pure-min.css
+  pure_sha384: sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47
+  pure_grids:
+    older_ie: https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css
+    newer_ie: https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css
+  marketing:
+    older_ie: /css/layouts/marketing-old-ie.css
+    newer_ie: /css/layouts/marketing.css
+  
+# Icons
+
+#fontawesome:   https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+fontawesome:   https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css
+iconic:        https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css
+ionicons:      https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
+mdi:           https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css
+        
+# Variables
+
+documentation: "/documentation/overview/start/"
+download:      https://github.com/jgthms/bulma/releases/download/0.6.0/bulma-0.6.0.zip
+github:        https://github.com/hattalo/bulma
+twitter:       https://twitter.com/jgthms
+version:       0.6.0
+vernum:        60
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-coffeescript
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
