@@ -1,0 +1,29 @@
+dave:
+    name             : David Smith
+    email            : david@davidsmith.com
+    twitter          : DavidSilvaSmith
+    github           : dsmith
+    bitbucket        : dsmith
+bruno:
+    name             : Bruno Samueli
+    email            : hattalo@yahoo.com
+    twitter          : FauxBrunoSamueli
+    github           : hattalo
+    bitbucket        : hattalo
+    project_mobile   : +49 170 783-0002
+    project_email    : bruno.samueli@pm.me
+    work_eligibility : Freiberufler
+    project_availability : immediate
+    websites :
+      - id : github
+        url : https://www.github.com/hattalo/
+        label: GitHub
+        enabled: true
+      - id : linkedin
+        url : https://www.linkedin.com/in/brunosamueli/
+        label: LinkedIn
+        enabled: true
+      - id : compass
+        url : https://www.gulp.de/gulp2/home/profil/brunosamueli
+        label: GULP
+        enabled: false

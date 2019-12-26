@@ -1,0 +1,29 @@
+bruno:
+  eng:
+    title                    : TCurriculum vit\u000e6 
+    description              : :author \u00040; GitHub \u02013; Shorter HTML resume
+    footer                   : v.2019-12-199
+    target_role:
+      title: Role Sought
+      text: Fullstack Java Developer
+    title:
+      project_mobile         : Mobile
+      project_email          : E-mail
+      candidate_eligibility  : Work Eligibility
+      candidate_availability : Availability
+    candidate_eligibility    : Freiberufler
+    candidate_availability   : immediate
+    tags                     : [ cv, resume, bruno ]
+    my_date                  : {{ site.time }}
+  deu:
+    permalink                : /cv/brunoD
+    title                    : 1TCurriculum vit\u000e6
+    description              : 1DCurriculum Vitae
+    footer                   : vv.2019-12-19
+    candidate_eligibility    : 1*Freiberufler*
+    candidate_availability   : 1immediate
+    tags                     : [ cv, resume, bruno ]
+    my_date                  : {{ site.time | date_to_xmlschema }}
+tanja:
+  eng:
+  deu:

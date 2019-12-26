@@ -2,34 +2,33 @@
 <html lang="en">
 <head>
     <title>Bruno Samueli @ GitHub</title>  
-    <link rel="manifest"     href="manifest.json">
+    <link rel="manifest"     href="manifest.json"/>
     <link rel="stylesheet"   href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">    
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css"/>
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"/>
     <!--<![endif]-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <link rel="stylesheet" href="assets/css/layouts/marketing-old-ie.css"/>
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/marketing.css">
+        <link rel="stylesheet" href="assets/css/layouts/marketing.css"/>
     <!--<![endif]-->
     
-    <link rel="stylesheet" href="static/webfonts/ExcellenceInMotion/stylesheet.css">
-    <link rel="stylesheet" href="static/webfonts/Formata/stylesheet.css">
-    <link rel="stylesheet" href="static/webfonts/Meta/stylesheet.css">
-    <link rel="stylesheet" href="static/webfonts/TitilliumText-fontfacekit/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <!--
-    <link rel="stylesheet" href="app/main.css">
-    -->
+    <link rel="search" href="assets/opensearch.xml" title="OpenSearch" type="application/opensearchdescription+xml" /> -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="ico"/>
+    <link rel="SHORTCUT ICON" href="assets/icons/favicon.ico" />
     
     <link rel="schema.DC"    href="http://purl.org/dc/elements/1.1/">
     <link rel="DC.relation"  href="http://dublincore.org/documents/2000/08/15/dcq-html/">
     
     <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="en-US">
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <!-- Page is based on Landing Page layout from https://purecss.io/layouts/ -->
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
@@ -37,56 +36,14 @@
     
     <meta name="DC.title"       content="Landing page for the personal GitHub Web site">
     <meta name="DC.creator"     content="Bruno Samueli, Freiberufler, Bayern">
-    <meta name="DC.date"        content="2019-11-11">
+    <meta name="DC.date"        content="{{ site.time | date_to_xmlschema }}">
     <meta name="DC.identifier"  content="http://dublincore.org/documents/dcq-html/">
     <meta name="DC.description" content="This document showcases my Web dev skills">
     <meta name="DC.format"      content="text/html">
     <meta name="DC.type"        content="Text">
-    <style type="text/css">
-        .excim-50-reg {font: 50px/56px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
-        .excim-30-reg {font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
-        .excim-20-reg {font: 20px/24px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
-        .formata-40-reg {font: 40px/48px 'FormataRegular', sans-serif;letter-spacing: 0;}
-        .formata-40-lite {font: 40px/48px 'FormataLight', sans-serif;letter-spacing: 1;}
-        .formata-18-lite {font: 18px/21px 'FormataLight', sans-serif;letter-spacing: 1;}
-        .formata-25-lite {font: 22px/25px 'FormataLight', sans-serif;letter-spacing: 1;}
-        .formata-24-bold {font: 24px/26px 'FormataRegular', sans-serif;letter-spacing: 0; text-transform: none;}
-        .formata-28-bold {font: 28px/32px 'FormataBold', sans-serif;letter-spacing: 2;text-transform: lowercase;}
-        .metaSerifWeb-34-bold {font: 34px/38px 'MetaSerifWebBold', sans-serif;font-weight: normal;font-style: normal; text-transform: none;}
-        .metaSerifWeb-bold {font: 18px/27px 'MetaSerifWebBold', sans-serif;font-weight: normal;font-style: normal; text-transform: none;}
-        .titilliumTextThin {font: 18px/27px 'TitilliumText22LThin', Arial, sans-serif;}
-		.titilliumTextLight {font: 18px/27px 'TitilliumText22LLight', Arial, sans-serif;}
-		.titilliumTextRegular {font: 18px/27px 'TitilliumText22LRegular', Arial, sans-serif;}
-		.titilliumTextMedium {font: 18px/27px 'TitilliumText22LMedium', Arial, sans-serif;}
-		.titilliumTextBold {font: 18px/27px 'TitilliumText22LBold', Arial, sans-serif;}
-		.titilliumTextXBold {font: 18px/27px 'TitilliumText22LXBold', Arial, sans-serif;}
-        .midali {vertical-align: middle}
-        .botali {vertical-align: text-bottom}
-        .top16 {margin-top: 16px; color: #fff;}
-        .top20 {margin-top: 20px}
-        a.ondarkbg:link {color: aliceblue;}
-        a.ondarkbg:visited {color: lightskyblue;}
-        a.ondarkbg:hover {color: lightsteelblue;}
-        a.ondarkbg:active {color: lightcyan;}
-        #siteVersion {position:absolute;bottom:18px;right:12px;color:burlywood;}
-    </style>
-        <!--
-        .fa.fa-screwdriver:before {/* todo with V.5*/
-            font-family: 'Font Awesome 5 Free';
-            content: "\f54a"; }
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/v4-shims.css">
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/core.css">
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/fontawesome.css">
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/regular.css">
-    <link rel="stylesheet" href="static/webfonts/fontawesome-free-5.3.1-web/css/pure.css">
-    <script type="text/javascript" src="app/main.js"></script>
-    -->
-
 </head>
 <body>
-
+{{ page.content | number_of_words }}
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <p class="pure-menu-item is-center excim-30-reg top16">Bruno Samueli</p>
@@ -103,13 +60,13 @@
             my resume:
         </p>
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <a href="static/cv/bruno-samueli_cv-en_2019-11_v1.1.doc" class="pure-button pure-button-primary formata-28-bold">DOC</a>
+            <a href="static/cv/bruno-samueli_cv-en_2019-11_v1.1b.doc" class="pure-button pure-button-primary formata-28-bold">DOC</a>
         </div>
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
             <a href="static/cv/bruno-samueli_cv-en.html" class="pure-button pure-button-primary formata-28-bold">HTML</a>
         </div>
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <a href="static/cv/bruno-samueli_cv-en_2019-11_v1.1.pdf" class="pure-button pure-button-primary formata-28-bold">PDF</a>
+            <a href="static/cv/bruno-samueli_cv-en_2019-11_v1.1b.pdf" class="pure-button pure-button-primary formata-28-bold">PDF</a>
         </div>
     </div>
 </div>
@@ -174,25 +131,44 @@
 
     <div class="ribbon l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-a
+            <img alt="Genggis Khan" src="assets/images/p0004.png" style="width:210px;height:auto;margin-top:110px;"/>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-            <h3 class="content-head content-head-ribbon">Executive  Summary</h3>
+            <h3 class="content-head content-head-ribbon titilliumTextMedium">Executive Summary</h3>
             
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4 class="content-subhead">Executive  Summary</h4>
-                <p>Track record of building efficient, reusable, testable software for Java- / JEE- / Spring-based applications and RESTful Web Services - including design, development, maintenance, automated testing, continuous integration
-                </p>
-                <p>Work experience being involved in all stages of system development life-cycle, able to put it into practice Agile (SCRUM), Kanban, TDD, DDD, Clean Code principles
-                </p>
-                <p>Work experience developing with microservices for cloud deployment
-                </p>
+                <h4 class="content-subhead theMixExtraLightPlain">Core Competencies</h4>
+                <ul class="core-competencies">
+                    <li>
+                        Track record of building efficient, reusable, testable software for Java- / JEE- / Spring-based applications and RESTful Web Services - including design, development, maintenance, automated testing, continuous integration
+                    </li>
+                    <li>
+                        Work experience being involved in all stages of system development life-cycle, able to put it into practice Agile (SCRUM), Kanban, TDD, DDD, Clean Code principles
+                    </li>
+                    <li>
+                        Work experience developing with SOA on JBoss and with microservices for cloud deployment
+                    </li>
+                </ul>
 
-                <h4 class="content-subhead">More Information</h4>
+                <h4 class="content-subhead theMixExtraLightPlain">More Information</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
+                    <a target="_blank"
+                       href="https://www.freelancermap.at/freelancer-verzeichnis/profile/entwicklung/154982-profil-java-applications-developer.html"
+                       title="Profil von Bruno Samueli auf www.freelancermap.at">
+                        <img src="https://www.freelancermap.at/images/widgets/button/findenSieMich.png"/>
+                    </a>
+                    <img src="assets/images/cleardot.gif" style="width:20px;"/>
+                    <a target="_blank"
+                       href="https://www.gulp.de/gulp2/home/profil/brunosamueli"
+                       title="Profil von Bruno Samueli auf www.gulp.de">
+                        <img src="https://www.gulp.de/webjars/_ver-0.3.577/img/GULP-Logo.svg" style="width:auto;height:40px;"/>
+                    </a>
+                    <img src="assets/images/cleardot.gif" style="width:20px;"/>
+                    <a target="_blank"
+                       href="https://www.linkedin.com/in/brunosamueli/"
+                       title="Profil von Bruno Samueli auf www.linkedin.com">
+                        <img src="https://cdn.business2community.com/wp-content/uploads/2016/02/View-my-LinkedIn-profile-image-3-300x140.png.png" style="width:auto;height:40px;"/>
+                    </a>
                 </p>
             </div>
         </div>
@@ -204,33 +180,44 @@ a
         <div class="content" style="float:left;margin-right:5%">
             <h4 class="content-subhead metaSerifWeb-bold" style="margin-top: 0;margin-bottom: 3px;">WebFont Demos</h4>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/Cardo-fontfacekit/demo.html">Cardo-fontfacekit</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/ExcellenceInMotion/demo.html">ExcellenceInMotion</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/Formata/demo.html">Formata</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/Meta/demo.html">Meta</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/TitilliumText-fontfacekit/demo.html">TitilliumText-fontfacekit</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/Trykker-fontfacekit/demo.html">Trykker-fontfacekit</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/Cardo-fontfacekit/demo.html">Cardo-fontfacekit</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/ExcellenceInMotion/demo.html">ExcellenceInMotion</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/Formata/demo.html">Formata</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/Meta/demo.html">Meta</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/TitilliumText-fontfacekit/demo.html">TitilliumText-fontfacekit</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/Trykker-fontfacekit/demo.html">Trykker-fontfacekit</a></li>
             </ul>
         </div>
         <div class="content" style="float:left;margin-right:5%">
             <h4 class="content-subhead metaSerifWeb-bold" style="margin-top: 0;margin-bottom: 3px;">Font Demos</h4>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item formata-18-lite"><a href="static/fonts/LM/demo.html">LM</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/fonts/Prospera/demo.html">Prospera</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/fonts/ProximaNova/demo.html">Proxima Nova</a></li>
-                <li class="pure-menu-item formata-18-lite"><a href="static/fonts/TheMixExtraLight/demo.html">TheMixExtraLight</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/fonts/LM/demo.html">LM</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/fonts/Prospera/demo.html">Prospera</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/fonts/ProximaNova/demo.html">Proxima Nova</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/fonts/TheMixExtraLight/demo.html">TheMixExtraLight</a></li>
             </ul>
         </div>
         
         <div class="content">
             <h4 class="content-subhead metaSerifWeb-bold" style="margin-top: 0;margin-bottom: 3px;">Font Awesome</h4>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item formata-18-lite"><a href="static/webfonts/fontawesome-free-5.3.1-web/demo.html">fontawesome-free-5.3.1-web</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="assets/webfonts/fontawesome-free-5.3.1-web/demo.html">fontawesome-free-5.3.1-web</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="pure-layout/index.html">pure-layout</a></li>
             </ul>
         </div>
-<div style="width:500px; display:block">
+        
+        <div class="content">
+            <h4 class="content-subhead metaSerifWeb-bold" style="margin-top: 0;margin-bottom: 3px;">Local Resources</h4>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item formata-18-lite"><a href="about/">about</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="ersa/">Ersa</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="oldrite/">Russian Old Rite Faith</a></li>
+                <li class="pure-menu-item formata-18-lite"><a href="ruscath/">Russian Catholicism</a></li>
+            </ul>
+        </div>
+        <div style="width:500px; display:block">
 
-</div>
+        </div>
     </div>
 
     <div class="footer l-box is-center titilliumTextRegular">
@@ -247,7 +234,7 @@ a
             [<a title="GitHub Pages" href="https://pages.github.com/" class="ondarkbg">More on GitHub Pages</a>]
         </div>
         <div id="siteVersion">
-            v.0.1-beta
+            v.0.1-alpha
         </div>
     </div>
 

@@ -9,8 +9,8 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 # The following it to use UTF-8 as encoding
-Encoding.default_external = Encoding::cp1252
-Encoding.default_internal = Encoding::cp1252
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
 
 gem "jekyll", "~> 3.8.5"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.

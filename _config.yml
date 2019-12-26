@@ -45,20 +45,30 @@ robots: none,noindex,nofollow,noarchive,nocache,noyaca
 viewport: width=device-width, initial-scale=1.0
 
 defaults:
-  -
-    scope:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: "assets/fonts"
+    values:
+      font: true
+  - scope:
+      path: "assets/webfonts"
+    values:
+      font: true
+  - scope:
       path: "" # all files in the project
       type: "posts"
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "/static/cv/cv-en.markdown"
       type: "pages" # previously `page` in Jekyll 2.2.
       permalink: "/cv/"
     values:
       layout: "cv" # overrides previous default layout
-      author: "Bruno Samueli1"
+      author: "Bruno Sambelidze"
       topic: "curriculum vita1e"
 
 exclude: ['assets/ersa', 'assets/lang', 'icons', 'templates', 'docker-compose.yml', 'package.json', 'yarn.lock', 'Gemfile.lock']
@@ -71,8 +81,8 @@ css:
     older_ie: https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css
     newer_ie: https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css
   marketing:
-    older_ie: /css/layouts/marketing-old-ie.css
-    newer_ie: /css/layouts/marketing.css
+    older_ie: /assets/css/layouts/marketing-old-ie.css
+    newer_ie: /assets/css/layouts/marketing.css
   
 # Icons
 

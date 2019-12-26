@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url("../webfonts/ExcellenceInMotion/stylesheet.css");
+@import url("../webfonts/Formata/stylesheet.css");
+@import url("../webfonts/Meta/stylesheet.css");
+@import url("../webfonts/TitilliumText-fontfacekit/stylesheet.css");
+@import url("../fonts/TheMixExtraLight/stylesheet.css");
+@import url("../fonts/ProximaNova/stylesheet.css");
+/* START */
+#siteVersion {position:absolute;bottom:18px;right:12px;color:burlywood;}
+.excim-50-reg {font: 50px/56px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
+.excim-30-reg {font: 30px/34px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
+.excim-20-reg {font: 20px/24px 'ExcellenceInMotionRegular', sans-serif;letter-spacing: 3;}
+.formata-40-reg {font: 40px/48px 'FormataRegular', sans-serif;letter-spacing: 0;}
+.formata-40-lite {font: 40px/48px 'FormataLight', sans-serif;letter-spacing: 1;}
+.formata-18-lite {font: 18px/21px 'FormataLight', sans-serif;letter-spacing: 1;}
+.formata-25-lite {font: 22px/25px 'FormataLight', sans-serif;letter-spacing: 1;}
+.formata-24-bold {font: 24px/26px 'FormataRegular', sans-serif;letter-spacing: 0; text-transform: none;}
+.formata-28-bold {font: 28px/32px 'FormataBold', sans-serif;letter-spacing: 2;text-transform: lowercase;}
+.metaSerifWeb-34-bold {font: 34px/38px 'MetaSerifWebBold', sans-serif;font-weight: normal;font-style: normal; text-transform: none;}
+.metaSerifWeb-bold {font: 18px/27px 'MetaSerifWebBold', sans-serif;font-weight: normal;font-style: normal; text-transform: none;}
+.titilliumTextThin {font: 18px/27px 'TitilliumText22LThin', Arial, sans-serif;}
+.titilliumTextLight {font: 18px/27px 'TitilliumText22LLight', Arial, sans-serif;}
+.titilliumTextRegular {font: 18px/27px 'TitilliumText22LRegular', Arial, sans-serif;}
+.titilliumTextMedium {font: 18px/27px 'TitilliumText22LMedium', Arial, sans-serif;}
+.titilliumTextBold {font: 18px/27px 'TitilliumText22LBold', Arial, sans-serif;}
+.titilliumTextXBold {font: 18px/27px 'TitilliumText22LXBold', Arial, sans-serif;}
+.proximaNova {font: 18px/27px 'ProximaNovaRegular', sans-serif;}
+.theMixExtraLightPlain {font: 18px/27px 'TheMixExtraLight-Plain', sans-serif;}
+.midali {vertical-align: middle}
+.botali {vertical-align: text-bottom}
+.top16 {margin-top: 16px; color: #fff;}
+.top20 {margin-top: 20px}
+a.ondarkbg:link {color: aliceblue;}
+a.ondarkbg:visited {color: lightskyblue;}
+a.ondarkbg:hover {color: lightsteelblue;}
+a.ondarkbg:active {color: lightcyan;}
+ul.core-competencies li {
+    list-style: square outside;
+    /*font: 18px/27px 'TheMixExtraLight-Plain', sans-serif;*/
+    font: 18px/27px 'ProximaNovaRegular', sans-serif;
+}
+/* END */

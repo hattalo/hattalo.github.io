@@ -1,0 +1,34 @@
+{% assign teammember = site.data.devteam[include.candidate] %}
+{% assign dict = site.data.resumes[include.candidate][include.language] %}
+    <table id="contact" class="pure-table pure-table-bordered cord-cv-table">
+        <tbody>
+            <tr class="startEntry">
+                <td class="title-cell">{{ dict.title.project_mobile }}</td>
+                <td><span class="fa fa-mobile-phone">&#xa0;</span>{% assign lastidx = teammember.project_mobile.size | minus: 1 %}{% for i in (0..lastidx) %}{% assign c = teammember.project_mobile | slice: i %}{% if c == '+' or  c == '-' or  c == ' ' %}{{ c }}{% else %}{{ c | prepend: '&#x3' | append: ';' }}{% endif %}{% endfor %}</td>
+                <td>&#xa0;</td>
+                <td class="title-cell">{{ dict.title.project_email }}</td>
+                <td><span class="fa fa-envelope">&#xa0;</span>{{ teammember.project_email }}</td>
+                <td><span>&#xa0;</span></td>
+                <td class="title-cell">{{ dict.title.candidate_eligibility }}</td>
+                <td><em>{{ dict.candidate_eligibility }}</em></td>
+                <td><span>&#xa0;</span></td>
+                <td class="title-cell">{{ dict.title.candidate_availability }}</td>
+                <td>{{ dict.candidate_availability }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="extlinks" class="pure-table pure-table-bordered cord-cv-table">
+        <tbody>
+            <tr class="startEntry"><!-- fa-xing -->
+                <td class="title-cell">Web</td>
+                {% for website in teammember.websites | where: 'enabled', true %}
+                <td class="is-center">
+                    <span class="fa fa-{{ website.id }}">&nbsp;</span><a target="_blank" id="{{ website.id }}" href="{{ website.url }}">{{ website.label }}</a>
+                </td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 id="role-sought" class="is-center">{{ dict.target_role.title }}: {{ dict.target_role.text }}</h4>

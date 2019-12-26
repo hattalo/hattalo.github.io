@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ 'eng'| slice: 0, 2 }}">
 <head>
     <title>{{site.title_start}} {{page.title}}</title>
 
-    {% include pure.html %}
+    {% include pure.html format='text/html' %}
 
-    <link rel="stylesheet" href="/static/cv/cv.css">
+    <link rel="stylesheet" href="{{site.data.cv.stylesheet}}">
 
     {% include dc.html format='text/html' %}
 
@@ -19,18 +19,17 @@
     <meta name="DC.description" content="{{ page.description }}">
 </head>
 <body>
-<header>
-    {{ site.header }}
+<header>url={{ page.url }}
+     {% assign category = page.url | remove:'/' | capitalize %}
+    path={{ page.path }}
 </header>
 <section id="var1">
-{% assign candidate = site.data.devteam[page.candidate] %}
-<div>page.author {{ page.author }} site.author {{ site.author }} author {{ author }} page.date {{ page.date }} page.time {{ page.time }} page.name {{ page.name }}</div>
 </section>
-<div id="app-root">
+<section id="app-root">
     {{ content }}
-</div>
-<div class="footer l-box is-center">
-    {{ page.footer }}
-</div>
+</section>
+<section class="footer l-box is-center">
+    <div id="siteVersion">v.{{ site.time | date: "%Y-%m-%d" }}</div>
+</section>
 </body>
 </html>
