@@ -1,0 +1,15 @@
+body, p, td {font-size: 16px;}
+small {font-size: 13px;}
+small.compact {font-size: 11px; font-family: tahoma, arial;}
+small.count {font-size: 10px; font-family: tahoma, arial;}
+big.head {font-size: 20px; font-family: tahoma, arial;}
+
+input.compact {font-size: 8px; font-family: tahoma, arial;}
+
+
+select.compact {font-size: 11px; font-family: tahoma, arial;}
+
+a:link {color: darkblue;}
+a:active {color: darkblue;}
+a:visited {color: darkblue;}
+a:hover {color: blue;} 
